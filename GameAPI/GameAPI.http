@@ -1,0 +1,17 @@
+@GameAPI_HostAddress = http://localhost:7274
+
+GET {{GameAPI_HostAddress}}/game?id=cee75301-a1cf-40ce-8419-731144802da7
+    Accept: application/json
+
+ ###
+POST {{GameAPI_HostAddress}}/game
+ Accept: application/json
+ Content-Type: application/json
+ {
+     "name":"game1",
+     "teams":2,
+     "maxPLayersInTeam":2
+ }
+
+
+###

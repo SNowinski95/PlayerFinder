@@ -1,0 +1,11 @@
+nav ul li .active {
+  color: #fff;
+}
+
+.activeBackground {
+  color: #1976d2;
+}
+
+.grayColor {
+  color: #333;
+}
