@@ -10,17 +10,17 @@ import { postData } from "../../../helpers/QuerryHelper";
 import { useNavigate } from "react-router-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import styled from "styled-components";
+import { styled } from '@mui/system';
 const defaultValues = {
   name: "", 
   teams: 0,
   maxPlayersInTeam: 0
 };
-const CreateStyle = styled.div`
+const CreateStyle = styled('div')(`
     background-color: gray;
     border: solid;
     border-color: #1976d2;
-`
+`);
 type GameCreateType = z.infer<typeof GameCreateSchema>;
 function CreateGame() {
   const { handleSubmit, control, reset, formState: state, register } = useForm<GameCreateType>({

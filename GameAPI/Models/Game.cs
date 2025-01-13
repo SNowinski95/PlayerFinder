@@ -16,5 +16,6 @@ public record Game
     public int Teams { get; set; }
     [BsonElement("MaxPLayersInTeam")]
     public int MaxPlayersInTeam { get; set; }
+
 }
 

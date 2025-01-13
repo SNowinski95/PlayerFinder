@@ -8,7 +8,6 @@ import Navbar from './Navbar';
 
 const Layout = () => {
     const [showNavbar, setshowNavbar] = useState(() => false);
-    //zobacz useCallback
     const setshowNavbarHandler = useCallback(() => {
         setshowNavbar((prev: Boolean) => !prev);
     }, [showNavbar]);

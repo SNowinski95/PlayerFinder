@@ -3,15 +3,14 @@ $active-background: #1976d2;
 $active-font-color: #fff;
     nav{
         ul{
-                li
-                {
-                        .active{
-                            color: $active-font-color;
-                        }
-                    
+            li
+            {
+                .active{
+                    color: $active-font-color;
                 }
+                
+            }
         }
-        
     }
     .activeBackground{
         color: $active-background;
